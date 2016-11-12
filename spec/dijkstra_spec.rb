@@ -7,9 +7,9 @@
 require 'simplecov'
 SimpleCov.start
 
-require 'part1'
+require 'dijkstra'
 
-RSpec.describe 'part1.rb' do
+RSpec.describe 'dijkstra.rb' do
   describe '#initialize' do
     it 'Edge should be initialized' do
       expect { Edge.new(1, 1, 1) }.not_to raise_error

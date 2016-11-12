@@ -92,21 +92,10 @@ class Graph < Array
   end
 end
 
-graph = Graph.new
-(1..6).each { |node| graph.push node }
-graph.make_edge 1, 2, 7
-graph.make_edge 1, 3, 9
-graph.make_edge 1, 6, 14
-graph.make_edge 2, 3, 10
-graph.make_edge 2, 4, 15
-graph.make_edge 3, 4, 2
-graph.make_edge 3, 6, 2
-graph.make_edge 4, 5, 9
-graph.make_edge 5, 6, 9
+
 
 # p graph.edges.size
 # p graph
 # p graph.edge_length(2, 1)
 # p graph.neighbors(1)
 # p graph.dijkstra(1)
-p graph.dijkstra(1, 5)
