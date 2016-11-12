@@ -9,7 +9,25 @@ AllCops:
     - '**/Gemfile'
 
 Metrics/LineLength:
-  Max: 80
+  Max: 110
+
+Metrics/BlockLength:
+  Max: 90
+
+Metrics/MethodLength:
+  Max: 90
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/PerceivedComplexity:
+  Max: 12
+
+Metrics/AbcSize:
+  Max: 35
 
 Style/StringLiterals:
   Enabled: true
+
+Style/GuardClause:
+  Enabled: false
